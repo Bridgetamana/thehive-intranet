@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hive - Employee Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">the hive</div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Search projects, assets...">
+                </div>
+                
+                <button class="icon-btn" onclick="toggleTheme()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+                
+                <button class="icon-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+                    </svg>
+                </button>
+                
+                <div class="user-menu">
+                    <div class="user-info">
+                        <div class="user-name">Alex Johnson</div>
+                        <div class="user-role">Creative Director</div>
+                    </div>
+                    <div class="user-avatar">AJ</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="hero-section">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <h1 class="hero-greeting">Good morning, Alex</h1>
+                    <p class="hero-subtitle">You have 3 active campaigns and 7 pending approvals</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Active Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">156K</div>
+                            <div class="stat-label">Total Reach</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">92%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <section class="quick-actions">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="actions-grid">
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                        </svg>
+                        <span class="action-label">Content Studio</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 7l-7 5 7 5V7z"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                        </svg>
+                        <span class="action-label">Video Hub</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                        <span class="action-label">Social Media</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        <span class="action-label">Client Portal</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H1v3h8v3l3-5-3-5v4z"/>
+                            <path d="M22 12h-7v3h7a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                        </svg>
+                        <span class="action-label">Analytics</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                            <circle cx="12" cy="13" r="3"/>
+                        </svg>
+                        <span class="action-label">Asset Library</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                        <span class="action-label">Brand Guidelines</span>
+                    </a>
+                    
+                    <a href="#" class="action-item">
+                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                        <span class="action-label">Settings</span>
+                    </a>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <div class="time-widget">
+                        <div class="current-time" id="current-time">10:30</div>
+                        <div class="current-date" id="current-date">Sunday, July 27, 2025</div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Today's Schedule</h3>
+                    <ul class="schedule-list">
+                        <li class="schedule-item">
+                            <span class="schedule-time">9:00</span>
+                            <span class="schedule-title">Team standup</span>
+                        </li>
+                        <li class="schedule-item">
+                            <span class="schedule-time">11:00</span>
+                            <span class="schedule-title">Client presentation</span>
+                        </li>
+                        <li class="schedule-item">
+                            <span class="schedule-time">14:00</span>
+                            <span class="schedule-title">Creative review</span>
+                        </li>
+                        <li class="schedule-item">
+                            <span class="schedule-time">16:00</span>
+                            <span class="schedule-title">Strategy meeting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Team Status</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar online">SM</div>
+                            <div class="member-name">Sarah M.</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar online">JD</div>
+                            <div class="member-name">John D.</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">EW</div>
+                            <div class="member-name">Emma W.</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar online">MK</div>
+                            <div class="member-name">Mike K.</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar online">LP</div>
+                            <div class="member-name">Lisa P.</div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">TR</div>
+                            <div class="member-name">Tom R.</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="news-section">
+            <div class="news-header">
+                <h2 class="section-title">Company Updates</h2>
+                <a href="#" class="view-all-btn">View All</a>
+            </div>
+            
+            <div class="featured-news">
+                <div class="news-image">Campaign Visual</div>
+                <div class="news-content">
+                    <div class="news-meta">July 25, 2025 • Company News</div>
+                    <h3 class="news-title">Q3 Campaign Performance Exceeds All Expectations</h3>
+                    <p class="news-excerpt">Our social media campaigns delivered exceptional results this quarter, with video content achieving 340% above industry benchmarks and client satisfaction reaching an all-time high of 98%.</p>
+                </div>
+            </div>
+            
+            <ul class="news-list">
+                <li class="news-item">
+                    <h4 class="news-item-title">New Creative Talent Joins The Hive Team</h4>
+                    <div class="news-item-meta">July 24, 2025 • Team Updates</div>
+                </li>
+                <li class="news-item">
+                    <h4 class="news-item-title">Partnership with Global Streaming Platform Announced</h4>
+                    <div class="news-item-meta">July 22, 2025 • Business</div>
+                </li>
+                <li class="news-item">
+                    <h4 class="news-item-title">Miami Office Expansion and New Studio Launch</h4>
+                    <div class="news-item-meta">July 20, 2025 • Company News</div>
+                </li>
+                <li class="news-item">
+                    <h4 class="news-item-title">Award-Winning Campaign for TechStart Goes Viral</h4>
+                    <div class="news-item-meta">July 18, 2025 • Achievements</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects-section">
+            <h2 class="section-title">Active Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>TechStart Brand Campaign</h4>
+                        <div class="project-meta">Updated 2 hours ago • Sarah M.</div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 7l-7 5 7 5V7z"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>Product Launch Video Series</h4>
+                        <div class="project-meta">Updated yesterday • Video Team</div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>Social Media Strategy - Q4</h4>
+                        <div class="project-meta">Updated 3 days ago • Strategy Team</div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>Client Portal Redesign</h4>
+                        <div class="project-meta">Updated 1 week ago • UX Team</div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                            <circle cx="12" cy="13" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>Brand Asset Library Update</h4>
+                        <div class="project-meta">Updated 1 week ago • Design Team</div>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H1v3h8v3l3-5-3-5v4z"/>
+                            <path d="M22 12h-7v3h7a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h4>Analytics Dashboard v2.0</h4>
+                        <div class="project-meta">Updated 2 weeks ago • Dev Team</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js" />
+</body>
+</html>
